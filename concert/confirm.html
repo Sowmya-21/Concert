@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta http-equiv="X-UA-compatible" content="ie=edge"/>
+        <title>Confirmation page</title>
+    </head>
+    <body>
+    <h1>Your Registration Confirmed!!</h1>
+    <h3>Details:</h3>
+    <script>
+        var myData  = localStorage.getItem('Data');
+        var arr=JSON.parse(localStorage.getItem('Data'));
+        var obj=arr.pop();
+        document.write("Name: "+ obj.name +"<br>"+"Email: "+obj.email+"<br>"+"No. of passes taken: "+obj.NoOfPasses);
+    </script>
+    </body>
+</html>
